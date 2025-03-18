@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class App {
     private static ArrayList<Menu> daftarMenu = new ArrayList<>();
     private static Scanner scanner = new Scanner(System.in);
-    private static int nextId = 1; // ID Otomatis mulai dari 1
+    private static int nextId = 1;
 
     public static void main(String[] args) {
         while (true) {
