@@ -1,0 +1,22 @@
+package model;
+
+public class Makanan extends Menu {
+    private String bumbuBubuk;
+
+    public Makanan(int id, String nama, String ukuran, double harga, String bumbuBubuk) {
+        super(id, nama, ukuran, harga); // Memanggil konstruktor dari class Menu
+        this.bumbuBubuk = bumbuBubuk;
+    }
+
+    public String getBumbuBubuk() {
+        return bumbuBubuk;
+    }
+
+    public void setBumbuBubuk(String bumbuBubuk) {
+        this.bumbuBubuk = bumbuBubuk; // Setter untuk update bumbu
+    }
+
+    public String toString() {
+        return super.toString() + " | Bumbu: " + bumbuBubuk;
+    }
+}
